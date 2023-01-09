@@ -146,7 +146,7 @@ nav ul li a:hover::after{
     background-color: rgb(255, 255, 255);
 }
 .about-me h1{
-    margin-top: 40px;
+    margin-top: 50px;
     font-size: 30px;
     font-family: 'Poppins', sans-serif;
     font-weight: 700;
@@ -157,6 +157,7 @@ nav ul li a:hover::after{
     font-family: 'Poppins', sans-serif;
     font-weight: 300;
     text-align: center;
+    margin-bottom: -30px;
 }
 .about-left{
     width: 100%;
@@ -208,6 +209,7 @@ nav ul li a:hover::after{
     padding: 100px;
     font-size: 40px;
     color: #000000;
+    margin-bottom: 70px;
 }
 
 /*MY SKILLS*/
@@ -218,11 +220,12 @@ nav ul li a:hover::after{
     flex: 0 0 100%;
 }
 .skill{
-    width: 700px;
+    width: 850px;
     margin: 40px auto;
     color: #000000;
     padding: 20px;
     box-shadow: 0 14px 28px rgba(0, 0, 0, 0.61);
+    margin-bottom: 70px;
 }
 .skills-me h1{
     font-size: 30;
@@ -340,6 +343,7 @@ button, input{
     padding: 10px;
 }
 .contact h1{
+    margin-top: 60px;
     font-family: 'Poppins', sans-serif;
     font-size: 25px;
     text-align: center;
