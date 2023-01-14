@@ -144,10 +144,10 @@ nav ul li a:hover::after{
     overflow: hidden;
     box-sizing: border-box;
     background-color: rgb(255, 255, 255);
-    margin-bottom: 150px;
+    margin-bottom: 10px;
 }
 .about-me h1{
-    margin-top: 50px;
+    margin-top: 20px;
     font-size: 30px;
     font-family: 'Poppins', sans-serif;
     font-weight: 700;
@@ -159,6 +159,7 @@ nav ul li a:hover::after{
     font-weight: 300;
     text-align: center;
     margin-bottom: -30px;
+    color: #444444;
 }
 .about-left{
     width: 100%;
@@ -173,6 +174,7 @@ nav ul li a:hover::after{
     width: 100%;
     height: auto;
     border-radius: 20px;
+    margin-left: 0;
 }
 .about-right{
     width: 60%;
@@ -187,6 +189,8 @@ nav ul li a:hover::after{
     margin-bottom: 30px;
     font-family: 'Poppins', sans-serif;
     font-weight: 200;
+    color: #000000;
+    margin-right: 40px;
 }
 .about-right p span{
     color: #9370DB;
@@ -210,9 +214,99 @@ nav ul li a:hover::after{
     padding: 100px;
     font-size: 40px;
     color: #000000;
-    margin-bottom: 70px;
+    margin-bottom: 40px;
+}
+.bands{
+    margin-left: 100px;
+    margin-top: 50px;
+}
+.bands h2{
+    font-size: 35px;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 900;
+}
+.band1975{
+    width: 100%;
+}
+.band1975 p{
+    float: left;
+    margin-top: 19px;
+    font-size: 20px;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 500;
+    width: 40%;
+}
+.band1975 p span{
+    color: #9370DB;
+    font-weight: 900;
+    font-size: 23px;
+}
+.band1975 img{
+    width: 45%;
+    margin-top: 0;
+    margin-left: 100px;
+    border-radius: 10px;
+    margin-bottom: 50px;
+}
+.band1975 a{
+    color: #3503a886;
 }
 
+.bandts{
+    width: 100%;
+}
+.bandts p{
+    float: right;
+    margin-left: 0;
+    margin-right: 120px;
+    margin-top: 20px;
+    font-size: 19px;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 500;
+    width: 40%;
+}
+.bandts p span{
+    color: #9370DB;
+    font-weight: 900;
+    font-size: 23px;
+}
+.bandts img{
+    width: 45%;
+    margin-top: 0;
+    border-radius: 10px;
+    margin-bottom: 50px;
+    margin-left: 0;
+}
+.bandts a{
+    color: #3503a886;
+}
+
+.bandtw{
+    width: 100%;
+}
+.bandtw p{
+    float: left;
+    margin-top: 20px;
+    font-size: 19px;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 500;
+    width: 40%;
+}
+.bandtw p span{
+    color: #9370DB;
+    font-weight: 900;
+    font-size: 21px;
+}
+.bandtw img{
+    width: 45%;
+    margin-top: 0;
+    margin-left: 100px;
+    border-radius: 10px;
+    margin-bottom: 50px;
+}
+.bandtw a{
+    color: #3503a886;
+}
 /*MY SKILLS*/
 .skills-me{
     margin: 0;
@@ -221,72 +315,279 @@ nav ul li a:hover::after{
     flex: 0 0 100%;
 
 }
-.skill{
-    width: 850px;
-    margin: 40px auto;
-    color: #000000;
-    padding: 20px;
-    box-shadow: 0 14px 28px rgba(0, 0, 0, 0.61);
-    margin-bottom: 185px;
-}
 .skills-me h1{
-    font-size: 30;
+    font-size: 30px;
     font-family: 'Poppins', sans-serif;
     font-weight: 900;
     text-align: center;
     margin-top: 50px;
 }
-.skill-list{
+.other{
+    float: right;
+    width: 43%;
+    margin-top: 70px;
+    margin-left: 40px;
+    margin-right: 40px;
+}
+.other p{
+    font-size: 19px;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 500;
+}
+.other p span{
+    color: #4015a3;
+    font-weight: 900;
+    font-style: italic;
+}
+.skills-bar{
+    margin-left: 60px;
+    margin-top: 50px;
+    margin-bottom: 60px;
+    width: 555px;
+    box-shadow: 5px 5px 10px 10px #6c5196;
+    background: #fff;
+    border-radius: 10px;
+    padding: 25px 30px;
+}
+.skills-bar .bar{
+    margin: 20px 0;
+}
+.skills-bar .bar:first-child{
+    margin-top: 0px;
+}
+.skills-bar .bar .info span{
+    margin-bottom: 5px;
+}
+.skills-bar .bar .info span{
+    font-family: 'Poppins', sans-serif;
+    font-size: 17px;
+    font-weight: 900;
+}
+.progress-line{
+    position: relative;
+    height: 10px;
+    width: 100%;
+    background: #44444446;
+    transform: scaleX(0);
+    transform-origin: left;
+    box-shadow: inset 0px 1px 1px rgb(255, 255, 255);
+    animation: animate 1s cubic-bezier(1,0,0.5,1) forwards;
+}
+@keyframes animate{
+    100%{
+        transform: scaleX(1);
+    }
+    
+}
+.progress-line span{
+    height: 100%;
+    width: 80%;
+    background: linear-gradient(45deg, rgb(188, 159, 255), rgb(174, 75, 255), rgb(148, 18, 255));
+    position: absolute;
+    border-radius: 20px;
+    animation: animate 1s 1s cubic-bezier(1,0,0.5,1) forwards;
+}
+.progress-line span::before{
+    position: absolute;
+    content: "";
+    height: 0;
+    width: 0;
+    right: 0;
+    top: -10px;
+    border: 7px solid transparent;
+    border-bottom-width: 0px;
+    border-right-width: 0px;
+    border-top-color: black;
+    opacity: 0;
+    animation: showText2 0.5s 1.5s linear forwards;
+}
+.progress-line span::after{
+    position: absolute;
+    right: 0;
+    top: -28px;
+    font-family: 'Poppins', sans-serif;
+    font-size: 12px;
+    font-weight: 500;
+    background: #000000;
+    color: #fff;
+    padding: 1px 8px;
+    border-radius: 3px;
+    opacity: 0;
+    animation: showText2 0.5s 1.5s linear forwards;
+}
+@keyframes showText2{
+    100%{
+        opacity: 1;
+    } 
+}
+.progress-line.html span::after{
+    content: "60%";
+}
+.progress-line.css span::after{
+    content: "50%";
+}
+.progress-line.jv span::after{
+    content: "20%";
+}
+.progress-line.php span::after{
+    content: "16%";
+}
+.progress-line.jq span::after{
+    content: "10%";
+}
+
+.progress-line.html span{
+    width: 75%;
+}
+.progress-line.css span{
+    width: 65%;
+}
+.progress-line.jv span{
+    width: 40%;
+}
+.progress-line.php span{
+    width: 30%;
+}
+.progress-line.jq span{
+    width: 20%;
+}
+.education{
+    width: 100%;
+    margin-top: 30px;
+}
+.education h1{
+    font-size: 30px;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 900;
+    text-align: center;
+}
+.education p{
     font-size: 20px;
     font-family: 'Poppins', sans-serif;
+    font-weight: 900;
+    text-align: center;
+    color: #444444;
+    margin-bottom: 50px;
 }
-.skill-list h3{
-    margin: 5px;
+.education i{
+    color: #9370DB;
+    font-size: 70px;
+    margin-left: 640px;
+    margin-bottom: 30px;
 }
-.skill-list li{
-    margin: 20px 0;
-    padding: 10px;
+.line2{
+    border-left: 2px solid #444444;
+    height: 80px;
+    position: absolute;
+    left: 50%;
 }
-.skill-list .bar{
-    display: block;
-    background: rgba(163, 163, 163, 0.295);
-    height: 20px;
-    border: 1px solid rgb(212, 201, 201);
-    border-radius: 10px;
-    overflow: hidden;
-    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.486);
-    transition: all 0.3s cubic-bezier(.25,.8,.25,1);
+.circle1{
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    position: relative;
+    background: #9370DB;
+    left: 49%;
 }
-.bar:hover{
-    box-shadow: 0 14px 28px rgba(0, 0, 0, 0.664);
+.study h3{
+    font-family: 'Poppins', sans-serif;
+    font-size: 20px;
+    color: #000000;
+    text-align: center;
+    padding-bottom: 2px;
 }
-.bar span{
-    height: 20px;
-    float: left;
-    background-image: linear-gradient(45deg, rgb(188, 159, 255), rgb(174, 75, 255), rgb(148, 18, 255));
+.study p{
+    font-family: 'Poppins', sans-serif;
+    font-size: 16px;
+    color: #444444;
+    text-align: center;
+    padding-bottom: 2px;
+    margin-bottom: 0;
 }
-.html{
-    width: 60%;
-    animation: html 3s;
+.study2{
+    width: 100%;
+    margin-top: 80px;
 }
-.css{
-    width: 40%;
-    animation: css 3s;
+.study2 h3{
+    font-family: 'Poppins', sans-serif;
+    font-size: 20px;
+    color: #000000;
+    text-align: center;
+    padding-bottom: 2px;
 }
-.javascript{
-    width: 10%;
-    animation: javascript 3s;
+.study2 p{
+    font-family: 'Poppins', sans-serif;
+    font-size: 16px;
+    color: #444444;
+    text-align: center;
+    padding-bottom: 2px;
+    margin-bottom: 0;
 }
-.php{
-    width: 2%;
-    animation: php 3s;
+.study3{
+    width: 100%;
+    margin-top: 80px;
 }
-.python{
-    width: 5%;
-    animation: python 3s;
+.study3 h3{
+    font-family: 'Poppins', sans-serif;
+    font-size: 20px;
+    color: #000000;
+    text-align: center;
+    padding-bottom: 2px;
 }
-
-
+.study3 p{
+    font-family: 'Poppins', sans-serif;
+    font-size: 16px;
+    color: #444444;
+    text-align: center;
+    padding-bottom: 2px;
+    margin-bottom: 0;
+}
+.study4{
+    width: 100%;
+    margin-top: 80px;
+}
+.study4 h3{
+    font-family: 'Poppins', sans-serif;
+    font-size: 20px;
+    color: #000000;
+    text-align: center;
+    padding-bottom: 2px;
+}
+.study4 p{
+    font-family: 'Poppins', sans-serif;
+    font-size: 16px;
+    color: #444444;
+    text-align: center;
+    padding-bottom: 2px;
+    margin-bottom: 0;
+}
+.study5{
+    width: 100%;
+}
+.study5 h3{
+    font-family: 'Poppins', sans-serif;
+    font-size: 20px;
+    color: #000000;
+    text-align: center;
+    padding-bottom: 2px;
+}
+.study5 p{
+    font-family: 'Poppins', sans-serif;
+    font-size: 16px;
+    color: #444444;
+    text-align: center;
+    padding-bottom: 2px;
+    margin-bottom: 50px;
+}
+.circle2{
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    position: relative;
+    background: #9370DB;
+    left: 49%;
+    margin-top: 70px;
+}
 /*PROJECTS HERE*/
 .row{
     width: 100%;
@@ -357,15 +658,15 @@ button, input{
     font-family: 'Poppins', sans-serif;
     font-size: 17px;
     text-align: center;
-    color: #000000;
+    color: #444444;
     font-weight: 300;
-    margin-bottom: 40px;
+    margin-bottom: 25px;
 }
 .screen{
     position: relative;
     box-shadow: 0 0 20px 2px rgb(174, 75, 255);
     border-radius: 15px;
-    margin-bottom: 250px;
+    margin-bottom: 100px;
 }
 .screen::after{
     content: '';
@@ -547,6 +848,7 @@ footer{
     justify-content: center;
     align-items: center;
     flex-direction: column;
+    margin-top: 100px;
 }
 footer .soc-icons,
 .menu{
